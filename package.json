@@ -11,10 +11,10 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "cross-env BROWSER=none react-scripts start",
+    "build": "cross-env react-scripts build",
+    "test": "cross-env react-scripts test",
+    "eject": "cross-env react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +30,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }
